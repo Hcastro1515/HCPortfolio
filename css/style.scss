@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 
 ul {
@@ -161,7 +165,74 @@ section {
   margin-bottom: 2em;
 }
 
+.hire {
+  background: #f7f7f7;
+  text-align: center;
+  margin-top: 8em;
+  margin-bottom: 3em;
+
+  span a {
+    color: #f09c38;
+  }
+}
+
+.footer-hero-design {
+  display: none;
+}
+
+.footer-container {
+  position: relative;
+  height: 20vh;
+  background: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  .footer-logo {
+    color: #51e0a4;
+    font-weight: bold;
+  }
+  nav {
+    width: 50%;
+    a {
+      color: #f09c38;
+    }
+
+    ul {
+      display: flex;
+      a {
+        display: block;
+        padding: 0 1em;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .right {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: 0;
+    margin: 0 2em;
+
+    .footer-hero-design {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 @media only screen and (min-width: 800px) {
+  .footer-container {
+    nav {
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
   .design-p,
   .portfolio {
     text-align: left;
@@ -214,6 +285,12 @@ section {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer-hero-design {
+    display: unset;
+  }
+}
+
 @media only screen and (min-width: 1050px) {
   .hero {
     height: 70vh;
@@ -260,6 +337,16 @@ section {
     float: right;
     max-width: 500px;
   }
+
+  .footer-container {
+    nav {
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -287,46 +374,43 @@ section {
 }
 
 @media only screen and (min-width: 1550px) {
-    .nav-container {
-      padding: 2em 2em 2em 20em;
-  
-      .logo {
-        font-size: 20px;
+  .nav-container {
+    padding: 2em 2em 2em 20em;
+
+    .logo {
+      font-size: 20px;
+    }
+
+    ul {
+      a {
+        font-size: 15px;
       }
-  
-      ul {
-        a {
-          font-size: 15px;
-        }
-      }
-    }
-  
-    .section {
-      padding: 10em 20em 4em 20em;
-    }
-  
-    .hero .content {
-      padding: 9em 20em 6em 20em;
-    }
-
-    .featured-desc{
-      font-size: 1.2em;
-    }
-  }
-  
-
-  .circle{
-    animation: circleAnim 1s infinite alternate-reverse;
-  }
-
-  @keyframes circleAnim{
-    from{
-      transform: translate(386px, 525px);
-      z-index: 5;
-    }
-    to{
-      transform: translate(386px, 575px);
     }
   }
 
+  .section {
+    padding: 10em 20em 4em 20em;
+  }
 
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
+
+  .featured-desc {
+    font-size: 1.2em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(386px, 525px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(386px, 575px);
+  }
+}

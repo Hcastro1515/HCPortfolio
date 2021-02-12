@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/animations.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -23,29 +24,40 @@
     <!-- Hero section -->
     <div class="hero">
       <div class="content">
-        <h1>Beautifying Your Web Experience</h1>
-        <div class="meet">
+        <h1 class="stagger1">Beautifying Your Web Experience</h1>
+        <div class="meet stagger1">
           <span>👇</span>
           <p>Meet Hector Castro</p>
         </div>
         <svg
-          class="scroll"
-          width="55"
-          height="106"
-          viewBox="0 0 55 106"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          class="scroll stagger1"
+          width="57"
+          height="114"
+          viewBox="0 0 57 114"
         >
-          <rect
-            x="3.5"
-            y="3.5"
-            width="48"
-            height="99"
-            rx="24"
-            stroke="#51E0A4"
-            stroke-width="7"
-          />
-          <circle cx="27" cy="30" r="14" fill="#F09C38" />
+          <g id="Pointer" transform="translate(-376 -512)">
+            <g
+              id="Rectangle_4"
+              data-name="Rectangle 4"
+              transform="translate(376 512)"
+              fill="none"
+              stroke="#51e0a4"
+              stroke-width="6"
+            >
+              <rect width="57" height="114" rx="28.5" stroke="none" />
+              <rect x="3" y="3" width="51" height="108" rx="25.5" fill="none" />
+            </g>
+            <circle
+              class="circle"
+              id="Ellipse_1"
+              data-name="Ellipse 1"
+              cx="19"
+              cy="19"
+              r="19"
+              transform="translate(386 525)"
+              fill="#f09c38"
+            />
+          </g>
         </svg>
       </div>
       <svg
@@ -56,6 +68,7 @@
         fill="none"
       >
         <rect
+          class="square-anim"
           x="168.93"
           y="70.7778"
           width="148"
@@ -65,6 +78,7 @@
           fill="#F09C38"
         />
         <rect
+          class="square-anim"
           x="157.616"
           y="268.768"
           width="148"
@@ -74,6 +88,7 @@
           fill="white"
         />
         <rect
+          class="square-anim"
           x="366.92"
           y="59.4642"
           width="148"
@@ -83,6 +98,7 @@
           fill="white"
         />
         <rect
+          class="square-anim"
           x="352.07"
           y="253.919"
           width="148"
@@ -92,6 +108,7 @@
           fill="#F09C38"
         />
         <circle
+       
           cx="260.146"
           cy="267.354"
           r="46.5"
@@ -99,6 +116,7 @@
           fill="#51E0A4"
         />
         <circle
+        class="square-anim"
           cx="465.207"
           cy="263.111"
           r="46.5"
@@ -113,6 +131,7 @@
           fill="#51E0A4"
         />
         <circle
+          class="square-anim"
           cx="66.3992"
           cy="277.253"
           r="46.5"
@@ -120,6 +139,7 @@
           fill="#51E0A4"
         />
         <circle
+          class="square-anim"
           cx="253.075"
           cy="475.243"
           r="46.5"
@@ -237,5 +257,46 @@
         <a href="#"><img src="images/project-1.png" alt="Java projects" /></a>
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+      integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      var tl = gsap.timeline();
+
+      tl.from(".stagger1", {
+        opacity: 0,
+        y: -50,
+        stagger: 0.3,
+        ease: Power4.easeOut,
+        duration: 2,
+      });
+
+      tl.from(
+        ".hero-design",
+        {
+          opacity: 0,
+          Y: 50,
+          ease: Power4.easeOut,
+          duration: 1,
+        },
+        "-=1.5"
+      );
+
+      gsap.from(
+        ".square-anim",
+        {
+          stagger: 0.2,
+          scale: 0.1,
+          duration: 1,
+          ease: Back.easeOut.config(1.7),
+        },
+        "-=1"
+      );
+    </script>
   </body>
 </html>

@@ -216,7 +216,7 @@ section {
 
 @media only screen and (min-width: 1050px) {
   .hero {
-    height: 90vh;
+    height: 70vh;
   }
 
   .nav-container {
@@ -308,5 +308,25 @@ section {
     .hero .content {
       padding: 9em 20em 6em 20em;
     }
+
+    .featured-desc{
+      font-size: 1.2em;
+    }
   }
   
+
+  .circle{
+    animation: circleAnim 1s infinite alternate-reverse;
+  }
+
+  @keyframes circleAnim{
+    from{
+      transform: translate(386px, 525px);
+      z-index: 5;
+    }
+    to{
+      transform: translate(386px, 575px);
+    }
+  }
+
+

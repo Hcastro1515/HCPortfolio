@@ -66,12 +66,26 @@ img {
 }
 
 .hero {
+  position: relative;
   background: #131313;
   color: white;
   display: -ms-grid;
   display: grid;
   text-align: center;
   padding: 4em;
+}
+
+.social-container {
+  position: absolute;
+  padding-top: 2em;
+  bottom: 10px;
+  right: 10px;
+}
+
+.social-container .social-icon {
+  margin: 0 .4em;
+  width: 18px;
+  height: 18px;
 }
 
 .meet {

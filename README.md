@@ -1,5 +1,6 @@
 #front end development status 80% done
 [ ] - create blog page
+[ ] - create cursor move animation for blog page
 [ ] - create contact page
 
 #Server dev status 0%

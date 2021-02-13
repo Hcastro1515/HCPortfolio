@@ -41,12 +41,21 @@ img {
     font-weight: bold;
   }
 
+  .active {
+    color: #51e0a4;
+  }
+
   ul {
     display: flex;
     a {
       display: block;
       padding: 0 1em;
       font-size: 11px;
+      transition: 0.2s ease-in;
+    }
+
+    a:hover {
+      color: #51e0a4;
     }
   }
 }
@@ -64,18 +73,16 @@ img {
   padding: 4em;
 }
 
-.social-container{
+.social-container {
   position: absolute;
   padding-top: 2em;
-  bottom: 10px; 
-  right: 10px; 
-  .social-icon{
-    margin: 0 .4em;
+  bottom: 10px;
+  right: 10px;
+  .social-icon {
+    margin: 0 0.4em;
     width: 18px;
     height: 18px;
   }
-
-  
 }
 
 .meet {

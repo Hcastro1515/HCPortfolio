@@ -49,6 +49,10 @@ img {
   font-weight: bold;
 }
 
+.nav-container .active {
+  color: #51e0a4;
+}
+
 .nav-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +63,12 @@ img {
   display: block;
   padding: 0 1em;
   font-size: 11px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.nav-container ul a:hover {
+  color: #51e0a4;
 }
 
 .hero-design {
@@ -83,7 +93,7 @@ img {
 }
 
 .social-container .social-icon {
-  margin: 0 .4em;
+  margin: 0 0.4em;
   width: 18px;
   height: 18px;
 }

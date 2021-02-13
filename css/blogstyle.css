@@ -209,8 +209,6 @@ a {
   }
   .blog-hero .blog-item {
     margin: 2em 2.5rem;
-    -webkit-box-shadow: 0 0px 0px 3px rgba(255, 255, 255, 0.2);
-            box-shadow: 0 0px 0px 3px rgba(255, 255, 255, 0.2);
     padding: 0.3em;
   }
 }
@@ -238,8 +236,6 @@ a {
   }
   .blog-hero .blog-item {
     margin: 2em 1rem;
-    -webkit-box-shadow: 0 0px 0px 3px rgba(255, 255, 255, 0.2);
-            box-shadow: 0 0px 0px 3px rgba(255, 255, 255, 0.2);
     padding: 0.3em;
   }
 }

@@ -109,9 +109,7 @@ a {
 
 .blog-hero .blog-hero_card .blog-item img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  height: 80%;
 }
 
 .blog-hero .blog-hero_card .blog-item .date {

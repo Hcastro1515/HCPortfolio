@@ -38,10 +38,10 @@ body {
 //   animation: cursorAnim2 .5s infinite alternate;
 // }
 
-// .expand {
-//   animation: cursorAnim3 .5s infinite alternate;
-//   border: 1px solid #51e0a4; 
-// }
+.expand {
+  animation: cursorAnim3 .5s infinite alternate;
+  border: 1px solid #51e0a4; 
+}
 
 @keyframes cursorAnim{
   from{

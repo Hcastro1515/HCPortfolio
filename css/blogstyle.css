@@ -12,6 +12,12 @@ body {
   background: #131313;
 }
 
+.expand {
+  -webkit-animation: cursorAnim3 .5s infinite alternate;
+          animation: cursorAnim3 .5s infinite alternate;
+  border: 1px solid #51e0a4;
+}
+
 @-webkit-keyframes cursorAnim {
   from {
     -webkit-transform: scale(1);

@@ -96,6 +96,8 @@ img {
   margin: 0 0.4em;
   width: 18px;
   height: 18px;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
 }
 
 .meet {

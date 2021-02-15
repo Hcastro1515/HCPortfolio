@@ -25,6 +25,61 @@ img {
   width: 100%;
 }
 
+.main {
+  height: 80vh;
+  background: #131313;
+  .hero-design {
+    display: none;
+  }
+
+  .form-container {
+
+    padding: 1em 1.2em;
+
+    form {
+      width: 100%;
+      // background: blue;
+      .form-sec {
+        margin: 1em 0;
+        width: 100%;
+        label {
+          font-size: 16px;
+          display: block;
+          color: #f09c38;
+        }
+
+        input[type="text"] {
+          width: 100%;
+          background: #c4c4c4;
+          color: #686868;
+          font-size: 12px;
+          padding: .6em .3em;
+          border: none;
+          border-radius: .3px; 
+        }
+      }
+
+      textarea{
+          width: 100%;
+          background: #c4c4c4; 
+          color: #686868; 
+          border: none; 
+          padding: .2em .5em;
+          border-radius: 3px; 
+      }
+
+      button{
+        background: #51e0a4; 
+        color: black; 
+        border: none; 
+        padding: .6em 0;
+        border-radius: 3px;
+        width: 100%; 
+    }
+    }
+  }
+}
+
 .nav-container {
   background: #212121;
   display: flex;
@@ -58,4 +113,72 @@ img {
       color: #51e0a4;
     }
   }
+}
+
+.footer-hero-design {
+  display: none;
+}
+
+.footer-container {
+  position: relative;
+  height: 20vh;
+  background: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  .footer-logo {
+    color: #51e0a4;
+    font-weight: bold;
+  }
+  nav {
+    width: 50%;
+    a {
+      color: #f09c38;
+    }
+
+    ul {
+      display: flex;
+      a {
+        display: block;
+        padding: 0 1em;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .right {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    right: 0;
+    margin: 0 2em;
+
+    .footer-hero-design {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 800px){
+    .footer-container {
+        nav {
+          li {
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .main{
+          display: flex;
+          align-items: center; 
+      }
+      .form-container{
+          width: 50%;
+          margin: auto;
+      }
 }
